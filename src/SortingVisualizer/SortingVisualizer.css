@@ -1,0 +1,93 @@
+:root {
+  --color: #971c8d;
+  --textColor: white;
+}
+.visualizer {
+  background-color: gray;
+  height: 100vh;
+}
+.visualizer__nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color);
+  padding: 15px;
+  cursor: not-allowed;
+}
+
+.visualizer__nav__title > span {
+  color: var(--textColor);
+  font-family: "Piedra", cursive;
+  font-size: large;
+  font-weight: 900;
+}
+
+.red {
+  background-color: red;
+}
+.visualizer__authur {
+  color: var(--textColor);
+  font-weight: 900;
+  font-size: x-large;
+  font-family: "Lobster", cursive;
+}
+
+.name {
+  font-family: cursive;
+  font-weight: 10;
+}
+
+.array-bar {
+  margin: 0 1px;
+  width: 5px;
+  background-color: whitesmoke;
+}
+
+.visualizer__buttonCollection {
+  cursor: pointer;
+  color: var(--textColor);
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.visualizer__buttonCollection > button {
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  color: var(--textColor);
+  background-color: var(--color);
+  border: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.buttonCollection {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+}
+button:disabled {
+  color: red;
+}
+.graphBars {
+  margin: 0 auto;
+  /*  align-items: baseline;  */
+  /* activate this for vetically rotating the bars */
+
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 75vh;
+}
+.warning {
+  display: none;
+}
+@media only screen and (max-device-width: 660px) {
+  .visualizer {
+    display: none;
+  }
+  .warning {
+    display: flex;
+    margin-top: 500px;
+    justify-content: center;
+    text-align: center;
+  }
+}
